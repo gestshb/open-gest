@@ -1,0 +1,729 @@
+object Fvente: TFvente
+  Left = 261
+  Height = 670
+  Top = 110
+  Width = 1162
+  ActiveControl = Panel1
+  BiDiMode = bdRightToLeft
+  Caption = 'فاتورة بيع'
+  ClientHeight = 670
+  ClientWidth = 1162
+  Font.CharSet = ANSI_CHARSET
+  Font.Height = -13
+  Font.Name = 'Tahoma'
+  Font.Pitch = fpVariable
+  Font.Quality = fqDraft
+  OnClose = FormClose
+  OnShow = FormShow
+  ParentBiDiMode = False
+  LCLVersion = '1.0.10.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 144
+    Top = 0
+    Width = 1162
+    Align = alTop
+    ClientHeight = 144
+    ClientWidth = 1162
+    TabOrder = 0
+    object Edit9: TEdit
+      Left = 1022
+      Height = 24
+      Top = 32
+      Width = 120
+      Anchors = [akTop, akRight]
+      BidiMode = bdRightToLeft
+      ParentBidiMode = False
+      ReadOnly = True
+      TabOrder = 6
+    end
+    object Label10: TLabel
+      Left = 1072
+      Height = 17
+      Top = 8
+      Width = 70
+      Anchors = [akTop, akRight]
+      BidiMode = bdRightToLeft
+      Caption = '  فاتورة رقم  '
+      ParentBidiMode = False
+      ParentColor = False
+    end
+    object DateEdit2: TDateEdit
+      Left = 828
+      Height = 24
+      Top = 32
+      Width = 140
+      CalendarDisplaySettings = [dsShowHeadings, dsShowDayNames]
+      OKCaption = 'OK'
+      CancelCaption = 'Cancel'
+      DefaultToday = True
+      DateOrder = doDMY
+      ButtonWidth = 23
+      Anchors = [akTop, akRight]
+      BidiMode = bdRightToLeft
+      CharCase = ecNormal
+      Glyph.Data = {
+        36040000424D3604000000000000360000002800000010000000100000000100
+        2000000000000004000064000000640000000000000000000000FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00D69E
+        72C4D3996EF4D19668FFCE9263FFCB8E5EFFC98A5BFFC78756FFC38452FFC384
+        52FFC38452FFC38452FFC38452FFC38452FFBB7742B0FFFFFF00FFFFFF00D7A1
+        75FFF8F2EDFFF7F0EAFFF6EDE6FFF4EAE2FFF3E7DEFFF1E4DBFFF0E2D8FFEAD6
+        C8FFF2E5DCFFFAF4F1FFF9F3F0FFFAF5F2FFC58A5DFDFFFFFF00FFFFFF00D9A4
+        7AFFF9F3EEFFEBD2BEFFFFFFFFFFEBD3BFFFFFFFFFFFEBD3C0FFFFFFFFFFEAC7
+        ADFFECD9CDFFF1E4DBFFF9F3F0FFF9F2EFFFC68C5FFFFFFFFF00FFFFFF00DDA8
+        7EFFF9F3EFFFEBD0BAFFEBD0BBFF75B57AFF75B57AFF75B57AFFEBD1BDFFEACD
+        B5FFFAF4F0FFEBD9CCFFF1E4DBFFFAF4F1FFC68A5CFFFFFFFF00FFFFFF00DFAA
+        82FFF9F3EFFFEACEB7FFFFFFFFFF75B57AFF94D49BFF74B579FFFFFFFFFFEACF
+        BAFFFBF6F2FFFAF3F0FFEBD8CBFFF2E6DDFFC88D5FFFFFFFFF00FFFFFF00E1AE
+        87FFFAF4F0FFEACBB2FFEACCB3FF75B57AFF74B579FF73B478FFEACEB7FF70B3
+        75FF6FB274FF6EB172FFE8C8AEFFEAD7C9FFC48654FFFFFFFF00FFFFFF00E3B1
+        8CFFFAF6F1FFEAC9AEFFFFFFFFFFEAC9B0FFFFFFFFFFE9CBB3FFFFFFFFFF6FB1
+        73FF8ED295FF6BAF6FFFFFFFFFFFF1E5DBFFC68655FFFFFFFF00FFFFFF00E5B4
+        8FFFFAF6F2FFE9C6AAFFE9C6ACFFEAC7ACFFE9C7ADFFE9C9AEFFE9C9B0FF6CB0
+        71FF6AAF6EFF68AD6DFFE8CCB5FFF2E7DEFFC88A59FFFFFFFF00FFFFFF00E7B7
+        94FFFBF7F4FFE9C3A6FFFFFFFFFFE8C4A9FFFFFFFFFFE9C6AAFFFFFFFFFFE8C7
+        ACFFFFFFFFFFE8C8B0FFFFFFFFFFF7F1EBFFCB8F5FFFFFFFFF00FFFFFF00E9BA
+        98FFFBF7F4FF65A4FFFF64A3FFFF62A2FFFF61A1FFFF5F9FFFFF5C9DFFFF5A9A
+        FFFF5798FFFF5495FFFF5294FFFFFBF7F4FFCE9364FFFFFFFF00FFFFFF00EBBD
+        9BFFFBF7F4FF64A4FFFF79BDFFFF75BBFFFF71B9FFFF6DB8FFFF68B3FFFF61B0
+        FFFF5AABFFFF54A7FFFF3B7DFFFFFBF7F4FFD1976AFFFFFFFF00FFFFFF00ECBF
+        9EFFFBF7F4FF65A4FFFF64A3FFFF60A0FFFF5D9EFFFF5899FFFF5496FFFF4D90
+        FFFF478BFFFF4284FFFF3D7FFFFFFBF7F4FFD49B6FFFFFFFFF00FFFFFF00EEC1
+        A1EBFBF7F4FFFBF7F4FFFBF7F4FFFBF7F4FFFBF7F4FFFBF7F4FFFBF7F4FFFBF7
+        F4FFFBF7F4FFFBF7F4FFFBF7F4FFFBF7F4FFD7A074F8FFFFFF00FFFFFF00EFC2
+        A37EEFC1A2E3EDC09FFFEBBE9DFFEBBC9AFFE9BA96FFE7B793FFE6B590FFE4B2
+        8CFFE2AF88FFE0AC84FFDDA980FFDCA57DFFDAA37ACAFFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00
+      }
+      NumGlyphs = 1
+      MaxLength = 10
+      ParentBidiMode = False
+      TabOrder = 7
+    end
+    object Label11: TLabel
+      Left = 922
+      Height = 17
+      Top = 8
+      Width = 35
+      Anchors = [akTop, akRight]
+      BidiMode = bdRightToLeft
+      Caption = 'التاريخ'
+      ParentBidiMode = False
+      ParentColor = False
+    end
+    object Edit11: TEdit
+      Left = 1022
+      Height = 24
+      Top = 91
+      Width = 120
+      Anchors = [akTop, akRight]
+      BidiMode = bdRightToLeft
+      ParentBidiMode = False
+      OnChange = Edit11Change
+      TabOrder = 0
+    end
+    object Label13: TLabel
+      Left = 1074
+      Height = 17
+      Top = 68
+      Width = 68
+      Anchors = [akTop, akRight]
+      Caption = 'معرف المنتج'
+      ParentColor = False
+    end
+    object Label17: TLabel
+      Left = 450
+      Height = 17
+      Top = 68
+      Width = 31
+      Anchors = [akTop, akRight]
+      Caption = 'الثمن'
+      ParentColor = False
+    end
+    object Label18: TLabel
+      Left = 162
+      Height = 17
+      Top = 68
+      Width = 51
+      Anchors = [akTop, akRight]
+      Caption = 'TVA (%)'
+      ParentColor = False
+    end
+    object Label14: TLabel
+      Left = 472
+      Height = 17
+      Top = -96
+      Width = 33
+      Caption = 'Client'
+      ParentColor = False
+    end
+    object Button5: TButton
+      Left = 986
+      Height = 27
+      Hint = 'Affeché ou caché La liste Du Produits'
+      Top = 91
+      Width = 32
+      Anchors = [akTop, akRight]
+      BidiMode = bdRightToLeft
+      Caption = '...'
+      ParentBidiMode = False
+      OnClick = Button5Click
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 1
+    end
+    object Label20: TLabel
+      Left = 619
+      Height = 17
+      Top = 68
+      Width = 35
+      Anchors = [akTop, akRight]
+      Caption = 'الكمية'
+      ParentColor = False
+    end
+    object Label21: TLabel
+      Left = 898
+      Height = 17
+      Top = 68
+      Width = 35
+      Anchors = [akTop, akRight]
+      Caption = 'المنتج'
+      ParentColor = False
+    end
+    object DBEdit2: TDBEdit
+      Left = 666
+      Height = 24
+      Top = 91
+      Width = 302
+      DataField = 'NOM_PRODUIT'
+      DataSource = Datasource3
+      Anchors = [akTop, akRight]
+      BiDiMode = bdRightToLeft
+      CharCase = ecNormal
+      MaxLength = 70
+      ParentBiDiMode = False
+      TabOrder = 8
+    end
+    object Edit18: TEdit
+      Left = 538
+      Height = 24
+      Top = 91
+      Width = 120
+      Anchors = [akTop, akRight]
+      ParentBidiMode = False
+      TabOrder = 2
+    end
+    object DBEdit3: TDBEdit
+      Left = 378
+      Height = 24
+      Top = 91
+      Width = 120
+      DataField = 'PRIX_VENTE'
+      DataSource = Datasource3
+      Anchors = [akTop, akRight]
+      CharCase = ecNormal
+      MaxLength = 8
+      ParentBiDiMode = False
+      TabOrder = 3
+    end
+    object DBEdit4: TDBEdit
+      Left = 162
+      Height = 24
+      Top = 91
+      Width = 120
+      DataField = 'TVA'
+      DataSource = Datasource3
+      Anchors = [akTop, akRight]
+      CharCase = ecNormal
+      Enabled = False
+      MaxLength = 0
+      ParentBiDiMode = False
+      TabOrder = 4
+    end
+    object DBEcdPRO: TDBEdit
+      Left = 800
+      Height = 24
+      Top = 248
+      Width = 82
+      DataField = 'id'
+      DataSource = Datasource3
+      CharCase = ecUppercase
+      MaxLength = 8
+      TabOrder = 10
+      Visible = False
+    end
+    object DBunite: TDBEdit
+      Left = 800
+      Height = 24
+      Top = 248
+      Width = 24
+      DataField = 'unite'
+      DataSource = Datasource3
+      CharCase = ecNormal
+      MaxLength = 5
+      TabOrder = 11
+      Visible = False
+    end
+    object id_op: TDBText
+      Left = 680
+      Height = 1
+      Top = 5
+      Width = 1
+      DataField = 'ident'
+      DataSource = Datasource4
+      ParentColor = False
+    end
+    object CheckBox1: TCheckBox
+      Left = 127
+      Height = 23
+      Top = 91
+      Width = 23
+      Anchors = [akTop, akRight]
+      BidiMode = bdRightToLeft
+      Checked = True
+      OnChange = CheckBox1Change
+      ParentBidiMode = False
+      State = cbChecked
+      TabOrder = 9
+    end
+    object BitBtn5: TBitBtn
+      Left = 17
+      Height = 25
+      Top = 91
+      Width = 101
+      Anchors = [akTop, akRight]
+      BidiMode = bdRightToLeft
+      Caption = 'أضف'
+      Enabled = False
+      Kind = bkOK
+      ModalResult = 1
+      OnClick = BitBtn5Click
+      ParentBidiMode = False
+      TabOrder = 5
+    end
+    object Edit1: TEdit
+      Left = 424
+      Height = 24
+      Top = 32
+      Width = 339
+      Anchors = [akTop, akRight]
+      TabOrder = 12
+      Text = '   '
+    end
+    object Label4: TLabel
+      Left = 435
+      Height = 17
+      Top = 8
+      Width = 321
+      Anchors = [akTop, akRight]
+      Caption = 'العميل  (*اختياري* من أجل ظهوره في ورقة الطباعة لا غير)'
+      ParentColor = False
+    end
+  end
+  object DBGrid1: TDBGrid
+    Left = 0
+    Height = 359
+    Top = 144
+    Width = 1162
+    Align = alTop
+    Anchors = [akLeft, akBottom]
+    Color = clWindow
+    Columns = <>
+    DataSource = Datasource1
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Options = [dgTitles, dgIndicator, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit, dgAutoSizeColumns]
+    ParentFont = False
+    PopupMenu = PopupMenu1
+    TabOrder = 1
+    TitleFont.CharSet = ANSI_CHARSET
+    TitleFont.Height = -13
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Pitch = fpVariable
+    TitleFont.Quality = fqDraft
+    OnDrawColumnCell = DBGrid1DrawColumnCell
+  end
+  object BitBtn2: TBitBtn
+    Left = 1038
+    Height = 29
+    Top = 505
+    Width = 114
+    Anchors = [akRight, akBottom]
+    Caption = 'احفظ'
+    Enabled = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Kind = bkOK
+    ModalResult = 1
+    OnClick = BitBtn2Click
+    ParentFont = False
+    TabOrder = 2
+  end
+  object BitBtn3: TBitBtn
+    Left = 1038
+    Height = 29
+    Top = 633
+    Width = 114
+    Anchors = [akRight, akBottom]
+    Caption = 'أغلق'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Kind = bkClose
+    OnClick = BitBtn3Click
+    ParentFont = False
+    TabOrder = 3
+  end
+  object DBHT: TDBEdit
+    Left = 104
+    Height = 22
+    Top = 522
+    Width = 168
+    DataField = 'THT'
+    DataSource = Datasource5
+    Anchors = [akLeft, akBottom]
+    CharCase = ecNormal
+    Font.Color = clNavy
+    Font.Height = -13
+    Font.Name = 'Ubuntu'
+    MaxLength = 0
+    ParentBiDiMode = False
+    ParentFont = False
+    TabOrder = 4
+  end
+  object DBTVA: TDBEdit
+    Left = 104
+    Height = 22
+    Top = 546
+    Width = 168
+    DataField = 'TVA'
+    DataSource = Datasource5
+    Anchors = [akLeft, akBottom]
+    CharCase = ecNormal
+    Font.Color = clNavy
+    Font.Height = -13
+    Font.Name = 'Ubuntu'
+    MaxLength = 0
+    ParentBiDiMode = False
+    ParentFont = False
+    TabOrder = 5
+  end
+  object RM: TEdit
+    Left = 104
+    Height = 22
+    Top = 594
+    Width = 168
+    Alignment = taRightJustify
+    Anchors = [akLeft, akBottom]
+    Font.Color = clNavy
+    Font.Height = -13
+    Font.Name = 'Ubuntu'
+    ParentBidiMode = False
+    ParentFont = False
+    TabOrder = 6
+  end
+  object Label1: TLabel
+    Left = 8
+    Height = 15
+    Top = 526
+    Width = 59
+    Anchors = [akLeft, akBottom]
+    Caption = 'TOTAL HT'
+    Font.Color = clRed
+    Font.Height = -13
+    Font.Name = 'Ubuntu'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 8
+    Height = 15
+    Top = 549
+    Width = 67
+    Anchors = [akLeft, akBottom]
+    Caption = 'TOTAL TVA'
+    Font.Color = clRed
+    Font.Height = -13
+    Font.Name = 'Ubuntu'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 8
+    Height = 17
+    Top = 596
+    Width = 41
+    Anchors = [akLeft, akBottom]
+    Caption = 'تخفيض'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object DBHT1: TDBEdit
+    Left = 304
+    Height = 66
+    Top = 524
+    Width = 592
+    DataField = 'TTC'
+    DataSource = Datasource5
+    Anchors = [akLeft, akBottom]
+    CharCase = ecNormal
+    Color = 3604480
+    Font.Color = clWhite
+    Font.Height = -51
+    Font.Name = 'Ubuntu'
+    MaxLength = 0
+    ParentBiDiMode = False
+    ParentFont = False
+    TabOrder = 7
+  end
+  object BitBtn1: TBitBtn
+    Left = 1038
+    Height = 29
+    Top = 535
+    Width = 114
+    Anchors = [akRight, akBottom]
+    Caption = 'جديد'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Kind = bkRetry
+    ModalResult = 4
+    OnClick = BitBtn1Click
+    ParentFont = False
+    TabOrder = 8
+  end
+  object BitBtn4: TBitBtn
+    Left = 1038
+    Height = 29
+    Top = 569
+    Width = 114
+    Anchors = [akRight, akBottom]
+    Caption = 'اطبع'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Glyph.Data = {
+      36090000424D3609000000000000360000002800000018000000180000000100
+      2000000000000009000064000000640000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0004000000040000001A00000038000000390000003900000039000000390000
+      0039000000390000003900000039000000390000003900000039000000390000
+      003900000039000000380000001A000000040000000400000002000000000807
+      075819181893201F1FAB8D8685E8F7EBECFFF7EBECFFF7EBECFFF7EBECFFF7EB
+      ECFFF7EBECFFF7EBECFFF7EBECFFF7EBECFFF7EBECFFF7EBECFFF7EBECFFF7EB
+      ECFFF7EBECFF8D8685E8201F1FAB19181893080707580000000F000000002E2C
+      2CAD5B5757FF625D5DFFD5CBCBFF5C5757FF4D4A4AFF504C4CFF504C4CFF504C
+      4CFF504C4CFF504C4CFF504C4CFF504C4CFF504C4CFF504C4CFF504C4CFF4D4A
+      4AFF5C5757FFD5CBCBFF625D5DFF5B5757FF2E2C2CAD00000016000000002422
+      229B474343FE433F3FFF676262FF363333FF302D2DFF312E2EFF312E2EFF312E
+      2EFF312E2EFF312E2EFF312E2EFF312E2EFF312E2EFF312E2EFF312E2EFF302D
+      2DFF363333FF676262FF423E3EFF474343FE2422229B0000001300000000514D
+      4D9CAAA1A1FE9B9292FF958D8DFFA69C9DFFA89E9EFFA79E9EFFA79E9EFFA79E
+      9FFFA79E9EFFA79E9EFFA79E9EFFA79E9EFFA79E9EFFA79E9EFFA79E9EFFA89E
+      9EFFA59C9CFF999091FFAA9A9FFFAEA4A5FE504C4C9C0000001600000000736E
+      6EAFE5D8D8FFD4C8C8FFD2C7C7FFA39A9AFF9F9796FFA09797FFA09898FFA198
+      98FFA19897FFA09898FFA19898FFA19898FFA19898FFA09898FFA19898FFA097
+      97FFA79B9CFFC0C2BCFF24DC77FFD3D5CEFF776E6FAF0000001600000000706B
+      6BACE1D4D4FFD2C7C7FFC4B8B9FF121111FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF0F0D0DFFB2ADAAFF83AE93FFCFC8C5FF746D6DAC0000001600000000726D
+      6DACE5D9DAFFD7CBCCFFD2C7C7FF322F30FF252323FF272525FF232122FF201E
+      1FFF1D1B1CFF1A1919FF191818FF181616FF171516FF161515FF161515FF1312
+      11FF211F20FFDFCBCFFFDFCBCFFFE8DADBFF726D6DAC0000001600000000756F
+      6FACEBDEDEFFDBCFD0FFDBCFD0FF3F3B3BFF343131FF383535FF3A3636FF3A37
+      36FF3A3737FF393535FF373433FF353231FF333030FF312F2EFF302D2DFF2B28
+      28FF373434FFDBCFD0FFDBCFD0FFEADEDEFF756F6FAC00000016000000007772
+      72ACF0E3E4FFE0D4D5FFE0D4D5FF5F5C5CFF585555FF5E5A5AFF605C5CFF625E
+      5EFF615E5EFF615D5DFF5F5A5BFF5B5757FF575454FF525050FF4F4B4BFF4744
+      44FF4F4B4BFFDED2D3FFDED2D3FFEFE1E2FF777171AC0000001600000000807A
+      7BB0FFFCFDFFF8EEEFFFEAE1E1FF7B7877FF736F70FF7A7777FF7D7A7BFF7F7D
+      7DFF7F7C7CFF7C797AFF787575FF726E6FFF6B6868FF646161FF5C5A5AFF5350
+      50FF5D5859FFF5E8E9FFF5E8E9FFFFF7F8FF7F797AB00000001400000000504C
+      4C69C0BABAD3C0B7B8D9BBB2B3FD3F3C3CFF858383FF8B8989FF8A8889FF8A89
+      89FF8A8888FF8A8888FF8A8787FF898787FF898787FF888786FF898787FF8482
+      82FF413E3FFFB8AFB0FDC0B6B7D9C0BABBD3504C4C6900000006000000000000
+      00020000000700000026323031F43B3939FFBDBDBDFFC5C4C4FFC5C4C4FFC5C5
+      C5FFC4C3C4FFC4C3C3FFC2C2C2FFC1C1C1FFC0BFBFFFBFBEBEFFBFBEBEFFB8B7
+      B7FF3B3839FF2F2C2DF400000026000000070000000200000000000000000000
+      0000000000000A0A0A1B393738F43F3C3CFFD7D8D8FFE0E0E0FFE0E0E0FFE1E1
+      E0FFDFE0E0FFDEDEDFFFDDDEDDFFDCDCDCFFDADBDBFFD8D8D9FFD7D8D8FFCFCF
+      CFFF3E3B3BFF3A3739F40A0A0A1B000000000000000000000000000000000000
+      0000000000000A0A0A1E393637F43F3D3DFFE3E4E4FFECEDEDFFECEDEDFFEDED
+      EEFFECECECFFEBEBEBFFE8E9E9FFE5E6E5FFE1E1E2FFDCDDDDFFD9DADAFFD2D2
+      D2FF3E3C3CFF393738F40A0A0A1E000000000000000000000000000000000000
+      0000000000000A0A0A1E383536F4403D3DFFE5E6E5FFEEEEEEFFEEEEEFFFEFEF
+      F0FFEEEEEFFFECECECFFE5E5E5FFD7D7D7FFC8C8C8FFBFC0C0FFC2C3C3FFC8C8
+      C8FF3E3B3CFF383537F40A0A0A1E000000000000000000000000000000000000
+      0000000000000C0C0C1F413E3FF63F3C3CFFE7E7E6FFF0F0F0FFF1F1F1FFF2F2
+      F2FFF1F1F1FFEDEDEDFFDDDDDDFFBDBEBEFFA0A0A0FF9A9B9BFFAFB0B0FF9B9C
+      9CFF363334FF434041F60C0C0C1F000000000000000000000000000000000000
+      00000000000007070714524F4FEF4E4A4AFFE7E7E7FFF2F3F3FFF3F4F3FFF4F4
+      F4FFF3F4F3FFEEEEEEFFD1D2D2FF969797FF747474FF7E7F7FFFA2A2A2FF6D6C
+      6CFF494545FF524E4EEF08070714000000000000000000000000000000000000
+      000000000000000000000000000026252586E7E8E7FFF5F6F5FFF5F6F6FFF7F7
+      F7FFF6F5F6FFF0F0F0FFB6B6B6FFB5B5B5FFC2C2C2FFE2E2E2FF949494CE1B1A
+      1A4C000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000B0C0C55E9E9E9FFF7F7F7FFF7F8F8FFF9F9
+      F9FFF7F7F7FFEFEFEFFFB5B4B5FFECECECFFFFFFFFFF9FA09FCB060606270000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000001010105DEAE9EAFFF8F8F9FFF9F9F9FFFBFA
+      FAFFF8F8F7FFEEEEEEFFC2C2C2FFFEFEFEFF9B9B9BCB03030326000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000001111115DF5F5F5FFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFF3F3F3FFD4D4D4FF99999ACC0404042600000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000007070732A1A1A1D3BEBEBEE9BEBEBEE8BFBF
+      BEE7BFC0BFEFB0B0B0FC6F6F6FBF070707250000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000
+    }
+    OnClick = BitBtn4Click
+    ParentFont = False
+    TabOrder = 9
+  end
+  object DBTVA1: TDBEdit
+    Left = 104
+    Height = 22
+    Top = 570
+    Width = 168
+    DataField = 'TTC1'
+    DataSource = Datasource5
+    Anchors = [akLeft, akBottom]
+    CharCase = ecNormal
+    Font.Color = clNavy
+    Font.Height = -13
+    Font.Name = 'Ubuntu'
+    MaxLength = 0
+    ParentBiDiMode = False
+    ParentFont = False
+    TabOrder = 10
+  end
+  object Label7: TLabel
+    Left = 8
+    Height = 15
+    Top = 573
+    Width = 66
+    Anchors = [akLeft, akBottom]
+    Caption = 'TOTAL TTC'
+    Font.Color = clRed
+    Font.Height = -13
+    Font.Name = 'Ubuntu'
+    ParentColor = False
+    ParentFont = False
+  end
+  object ComboBox1: TComboBox
+    Left = 1040
+    Height = 24
+    Top = 602
+    Width = 114
+    Anchors = [akRight, akBottom]
+    Enabled = False
+    ItemHeight = 0
+    ItemIndex = 0
+    Items.Strings = (
+      'وصل تسليم'
+      'و.ط.مبسط'
+      'تيكات'
+    )
+    OnChange = ComboBox1Change
+    TabOrder = 11
+    Text = 'وصل تسليم'
+  end
+  object CheckBox3: TCheckBox
+    Left = 980
+    Height = 23
+    Top = 603
+    Width = 56
+    Anchors = [akRight, akBottom]
+    BidiMode = bdRightToLeft
+    Caption = 'اعرض'
+    OnChange = CheckBox3Change
+    ParentBidiMode = False
+    TabOrder = 12
+  end
+  object Datasource1: TDatasource
+    DataSet = DataM.SQLShowVente
+    left = 465
+    top = 395
+  end
+  object Datasource2: TDatasource
+    DataSet = DataM.SQLShowClients
+    left = 360
+    top = 224
+  end
+  object Datasource3: TDatasource
+    DataSet = DataM.SQLShowPRO
+    left = 816
+    top = 264
+  end
+  object Datasource4: TDatasource
+    left = 376
+    top = 128
+  end
+  object Datasource5: TDatasource
+    DataSet = DataM.SQLcalcul
+    left = 288
+    top = 816
+  end
+  object Datasource6: TDatasource
+    DataSet = DataM.SQLsave
+    left = 944
+    top = 792
+  end
+  object PopupMenu1: TPopupMenu
+    left = 656
+    top = 320
+    object MenuItem1: TMenuItem
+      Caption = 'عدل'
+      OnClick = MenuItem1Click
+    end
+    object supprimer: TMenuItem
+      Caption = 'احذف'
+      Hint = 'Supprimer'
+      OnClick = supprimerClick
+    end
+  end
+  object frReport1: TfrReport
+    Dataset = frDBDataSet1
+    InitialZoom = pzDefault
+    Options = []
+    PreviewButtons = [pbZoom, pbLoad, pbSave, pbPrint, pbFind, pbHelp, pbExit]
+    DataType = dtDataSource
+    OnBeginBand = frReport1BeginBand
+    OnGetValue = frReport1GetValue
+    OnEnterRect = frReport1EnterRect
+    left = 320
+    top = 144
+  end
+  object frDBDataSet1: TfrDBDataSet
+    DataSet = DataM.SQLShowVente
+    left = 416
+    top = 120
+  end
+  object Datasource7: TDatasource
+    DataSet = DataM.SQLaddpro
+    left = 688
+    top = 608
+  end
+end

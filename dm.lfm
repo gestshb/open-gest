@@ -1,0 +1,464 @@
+object DataM: TDataM
+  OldCreateOrder = False
+  Height = 712
+  HorizontalOffset = 431
+  VerticalOffset = 19
+  Width = 735
+  object SQLTransaction1: TSQLTransaction
+    Active = False
+    Action = caNone
+    Database = IBConnection1
+    left = 448
+    top = 64
+  end
+  object IBConnection1: TIBConnection
+    Connected = False
+    LoginPrompt = False
+    KeepConnection = False
+    Transaction = SQLTransaction1
+    CharSet = 'UTF-8'
+    LogEvents = []
+    left = 368
+    top = 200
+  end
+  object SQLproduit: TSQLQuery
+    FieldDefs = <>
+    Database = IBConnection1
+    Transaction = SQLTransaction1
+    SQL.Strings = (
+      ''
+    )
+    InsertSQL.Strings = (
+      ''
+    )
+    Params = <>
+    left = 32
+    top = 16
+  end
+  object SQLaddpro: TSQLQuery
+    FieldDefs = <>
+    Database = IBConnection1
+    Transaction = SQLTransaction1
+    Params = <>
+    left = 128
+    top = 16
+  end
+  object SQLmembre: TSQLQuery
+    FieldDefs = <    
+      item
+        Name = 'ID_M'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'MEMBRE'
+        DataType = ftString
+        Precision = -1
+        Size = 30
+      end    
+      item
+        Name = 'ADR'
+        DataType = ftString
+        Precision = -1
+        Size = 25
+      end    
+      item
+        Name = 'RC'
+        DataType = ftString
+        Precision = -1
+        Size = 10
+      end    
+      item
+        Name = 'CF'
+        DataType = ftString
+        Precision = -1
+        Size = 20
+      end    
+      item
+        Name = 'TEL'
+        DataType = ftString
+        Precision = -1
+        Size = 20
+      end    
+      item
+        Name = 'FAX'
+        DataType = ftString
+        Precision = -1
+        Size = 20
+      end    
+      item
+        Name = 'N_ARTICLE'
+        DataType = ftString
+        Precision = -1
+        Size = 20
+      end    
+      item
+        Name = 'CB'
+        DataType = ftString
+        Precision = -1
+        Size = 20
+      end    
+      item
+        Name = 'E-mail'
+        DataType = ftString
+        Precision = -1
+        Size = 30
+      end    
+      item
+        Name = 'SOLDE'
+        DataType = ftBCD
+        Precision = 18
+        Size = 2
+      end>
+    Database = IBConnection1
+    Transaction = SQLTransaction1
+    SQL.Strings = (
+      'SELECT ID_M, MEMBRE, ADR, RC, CF, TEL, FAX, N_ARTICLE, CB, "E-mail", solde*(-1) solde FROM SP_MEMBRES'
+      '        where membre <> ''INVENTAIRE'' order by membre'
+    )
+    Params = <>
+    left = 32
+    top = 112
+  end
+  object SQLAddMembre: TSQLQuery
+    FieldDefs = <>
+    Database = IBConnection1
+    Transaction = SQLTransaction1
+    Params = <>
+    left = 152
+    top = 120
+  end
+  object SQLShowVente: TSQLQuery
+    FieldDefs = <>
+    Database = IBConnection1
+    Transaction = SQLTransaction1
+    Params = <>
+    left = 32
+    top = 328
+  end
+  object SQLShowClients: TSQLQuery
+    FieldDefs = <>
+    Database = IBConnection1
+    Transaction = SQLTransaction1
+    SQL.Strings = (
+      'select * from membres'
+      'where membre <> ''INVENTAIRE'''
+    )
+    Params = <>
+    left = 152
+    top = 328
+  end
+  object SQLShowPRO: TSQLQuery
+    FieldDefs = <>
+    Database = IBConnection1
+    Transaction = SQLTransaction1
+    SQL.Strings = (
+      'select * from produits'
+    )
+    Params = <>
+    left = 272
+    top = 328
+  end
+  object SQLtest: TSQLQuery
+    FieldDefs = <>
+    Database = IBConnection1
+    Transaction = SQLTransaction1
+    Params = <>
+    DataSource = Fvente.Datasource4
+    left = 368
+    top = 328
+  end
+  object SQLcalcul: TSQLQuery
+    FieldDefs = <>
+    Database = IBConnection1
+    Transaction = SQLTransaction1
+    Params = <>
+    left = 448
+    top = 328
+  end
+  object SQLsave: TSQLQuery
+    FieldDefs = <>
+    Database = IBConnection1
+    Transaction = SQLTransaction1
+    Params = <>
+    left = 528
+    top = 328
+  end
+  object SQLhome: TSQLQuery
+    FieldDefs = <    
+      item
+        Name = 'N'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'MEMBRE'
+        DataType = ftString
+        Precision = -1
+        Size = 50
+      end    
+      item
+        Name = 'DATE'
+        DataType = ftDate
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'TIME'
+        DataType = ftTime
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'VERSEMENT'
+        DataType = ftBCD
+        Precision = 18
+        Size = 2
+      end    
+      item
+        Name = 'REMIS'
+        DataType = ftBCD
+        Precision = 18
+        Size = 2
+      end    
+      item
+        Name = 'MODE_PAYMENT'
+        DataType = ftString
+        Precision = -1
+        Size = 10
+      end    
+      item
+        Name = 'NET_A_PAYEE'
+        DataType = ftBCD
+        Precision = 18
+        Size = 2
+      end    
+      item
+        Name = 'UTILISATEUR'
+        DataType = ftString
+        Precision = -1
+        Size = 20
+      end>
+    Database = IBConnection1
+    Transaction = SQLTransaction1
+    SQL.Strings = (
+      'SELECT NUM N,CLIENT Membre,DATE_FAC "DATE",TIME_FAC "TIME", VERSEMENT,REMIS,MODE_PAYMENT,TTC net_a_Payee, UTILISATEUR'
+      '      FROM SP_FACTURE_VENTE(:NUM, :Mdop, :DATE1, :DATE2)'
+    )
+    Params = <    
+      item
+        DataType = ftUnknown
+        Name = 'NUM'
+        ParamType = ptInput
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'Mdop'
+        ParamType = ptInput
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'DATE1'
+        ParamType = ptInput
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'DATE2'
+        ParamType = ptInput
+      end>
+    left = 40
+    top = 432
+  end
+  object SQLshowPro2: TSQLQuery
+    FieldDefs = <>
+    Database = IBConnection1
+    Transaction = SQLTransaction1
+    Params = <>
+    left = 224
+    top = 16
+  end
+  object SQLfrais: TSQLQuery
+    FieldDefs = <    
+      item
+        Name = 'ID'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'Déclaration des frais'
+        DataType = ftString
+        Precision = -1
+        Size = 50
+      end    
+      item
+        Name = 'MONTANT'
+        DataType = ftBCD
+        Precision = 18
+        Size = 2
+      end    
+      item
+        Name = 'Date'
+        DataType = ftDate
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'UTILISATEUR'
+        DataType = ftString
+        Precision = -1
+        Size = 30
+      end>
+    Database = IBConnection1
+    Transaction = SQLTransaction1
+    SQL.Strings = (
+      'SELECT ID,DESIGNATION "Déclaration des frais",Montant,DATE_FRAIS "Date",UTILISATEUR FROM FRAIS_TABLE'
+    )
+    Params = <>
+    left = 21
+    top = 525
+  end
+  object SQLcopier: TSQLQuery
+    FieldDefs = <>
+    Database = IBConnection1
+    Transaction = SQLTransaction1
+    Params = <>
+    left = 120
+    top = 432
+  end
+  object SQLchiffre: TSQLQuery
+    FieldDefs = <    
+      item
+        Name = 'N'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'CLIENT'
+        DataType = ftString
+        Precision = -1
+        Size = 50
+      end    
+      item
+        Name = 'DATE'
+        DataType = ftDate
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'TTC'
+        DataType = ftBCD
+        Precision = 18
+        Size = 2
+      end>
+    Database = IBConnection1
+    Transaction = SQLTransaction1
+    SQL.Strings = (
+      'SELECT NUM N,CLIENT,DATE_FAC "DATE",TTC'
+      '        FROM SP_FACTURE_VENTE(:NUM, :Mdop, :DATE1, :DATE2)'
+    )
+    Params = <    
+      item
+        DataType = ftUnknown
+        Name = 'NUM'
+        ParamType = ptInput
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'Mdop'
+        ParamType = ptInput
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'DATE1'
+        ParamType = ptInput
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'DATE2'
+        ParamType = ptInput
+      end>
+    left = 24
+    top = 624
+  end
+  object SQLcaisse: TSQLQuery
+    FieldDefs = <    
+      item
+        Name = 'IDF'
+        DataType = ftInteger
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'Désignation'
+        DataType = ftString
+        Precision = -1
+        Size = 50
+      end    
+      item
+        Name = 'Opérateur'
+        DataType = ftString
+        Precision = -1
+        Size = 50
+      end    
+      item
+        Name = 'Entrée'
+        DataType = ftFloat
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'SORTIE'
+        DataType = ftFloat
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'DT'
+        DataType = ftDate
+        Precision = -1
+        Size = 0
+      end    
+      item
+        Name = 'OBS'
+        DataType = ftString
+        Precision = -1
+        Size = 50
+      end>
+    Database = IBConnection1
+    Transaction = SQLTransaction1
+    SQL.Strings = (
+      ''
+    )
+    Params = <>
+    left = 120
+    top = 632
+  end
+  object SQLcaisse1: TSQLQuery
+    FieldDefs = <>
+    Database = IBConnection1
+    Transaction = SQLTransaction1
+    Params = <>
+    left = 232
+    top = 640
+  end
+  object SQLaddpro2: TSQLQuery
+    FieldDefs = <>
+    Database = IBConnection1
+    Transaction = SQLTransaction1
+    Params = <>
+    left = 598
+    top = 31
+  end
+  object SQLalert: TSQLQuery
+    FieldDefs = <>
+    Database = IBConnection1
+    Transaction = SQLTransaction1
+    Params = <>
+    left = 314
+    top = 131
+  end
+end

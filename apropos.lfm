@@ -1,0 +1,119 @@
+object Fapropos: TFapropos
+  Left = 441
+  Height = 287
+  Top = 238
+  Width = 808
+  BiDiMode = bdRightToLeft
+  BorderStyle = bsDialog
+  Caption = 'حول البرنامج'
+  ClientHeight = 287
+  ClientWidth = 808
+  ParentBiDiMode = False
+  Position = poScreenCenter
+  LCLVersion = '1.0.10.0'
+  object Label1: TLabel
+    Left = 280
+    Height = 28
+    Top = 16
+    Width = 158
+    Caption = 'OpenGest 1.2'
+    Font.Height = -24
+    Font.Name = 'Ubuntu'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 528
+    Height = 17
+    Top = 64
+    Width = 56
+    Caption = 'OpenGest'
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 144
+    Height = 17
+    Top = 64
+    Width = 361
+    Caption = 'هو برنامج مفتوح المصدر لإدارة  المستودعات و المتاجر ونقاط البيع  '
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 88
+    Height = 17
+    Top = 96
+    Width = 536
+    Caption = 'وهو صورة مصغرة للبرنامج الاحترافي GestSHB ويمكنه العمل على بيئة لينكس وويندوز بكافة إصداراتها'
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label6: TLabel
+    Left = 288
+    Height = 15
+    Top = 176
+    Width = 164
+    Caption = 'البرنامج يصدر تحت رخصة GPL'
+    ParentColor = False
+  end
+  object Label7: TLabel
+    Left = 256
+    Height = 15
+    Top = 240
+    Width = 231
+    Caption = 'gestshb@gmail.com   Tel : 0553953616'
+    Font.Color = clBlue
+    ParentColor = False
+    ParentFont = False
+  end
+  object BitBtn1: TBitBtn
+    Left = 64
+    Height = 39
+    Top = 224
+    Width = 91
+    Caption = 'موافق'
+    Default = True
+    Kind = bkOK
+    ModalResult = 1
+    OnClick = BitBtn1Click
+    TabOrder = 0
+  end
+  object Label8: TLabel
+    Left = 424
+    Height = 15
+    Top = 136
+    Width = 85
+    Caption = 'الموقع الرسمي'
+    DragCursor = crDefault
+    ParentColor = False
+  end
+  object Label9: TLabel
+    Cursor = crHandPoint
+    Left = 232
+    Height = 15
+    Top = 136
+    Width = 166
+    Caption = 'www.shbsoft.blogspot.com'
+    DragCursor = crDefault
+    Font.Color = clBlue
+    ParentColor = False
+    ParentFont = False
+    OnClick = Label9Click
+  end
+  object Label10: TLabel
+    Left = 232
+    Height = 15
+    Top = 208
+    Width = 285
+    Caption = 'كل الحقوق محفوظة لصالح أحمد صحبي أبي عبد البر'
+    ParentColor = False
+  end
+end

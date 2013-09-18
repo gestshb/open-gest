@@ -1,0 +1,130 @@
+object Fparam: TFparam
+  Left = 569
+  Height = 350
+  Top = 311
+  Width = 580
+  BiDiMode = bdRightToLeft
+  BorderStyle = bsDialog
+  Caption = 'خصائص'
+  ClientHeight = 350
+  ClientWidth = 580
+  OnShow = FormShow
+  ParentBiDiMode = False
+  Position = poScreenCenter
+  LCLVersion = '1.0.10.0'
+  object BitBtn1: TBitBtn
+    Left = 176
+    Height = 34
+    Top = 272
+    Width = 113
+    Cancel = True
+    Caption = 'ألغ'
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Kind = bkCancel
+    ModalResult = 2
+    OnClick = BitBtn1Click
+    ParentFont = False
+    TabOrder = 0
+  end
+  object BitBtn2: TBitBtn
+    Left = 48
+    Height = 34
+    Top = 272
+    Width = 121
+    Caption = 'موافق'
+    Default = True
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Kind = bkOK
+    ModalResult = 1
+    OnClick = BitBtn2Click
+    ParentFont = False
+    TabOrder = 1
+  end
+  object RadioGroup1: TRadioGroup
+    Left = 144
+    Height = 88
+    Top = 8
+    Width = 393
+    AutoFill = True
+    Caption = 'القيمة المضافة'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.TopBottomSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 70
+    ClientWidth = 389
+    Font.Color = 4788240
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    ParentFont = False
+    TabOrder = 2
+    object RadioButton1: TRadioButton
+      Left = 6
+      Height = 29
+      Top = 6
+      Width = 377
+      Caption = 'غير معفى'
+      TabOrder = 0
+    end
+    object RadioButton2: TRadioButton
+      Left = 6
+      Height = 29
+      Top = 35
+      Width = 377
+      Caption = 'معفى'
+      Checked = True
+      TabOrder = 1
+      TabStop = True
+    end
+  end
+  object CheckGroup1: TCheckGroup
+    Left = 144
+    Height = 88
+    Top = 128
+    Width = 393
+    AutoFill = True
+    Caption = 'تنبيه المستودعات'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.TopBottomSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 70
+    ClientWidth = 389
+    Font.Color = 4788240
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    ParentFont = False
+    TabOrder = 3
+    object CheckBox1: TCheckBox
+      Left = 6
+      Height = 58
+      Top = 6
+      Width = 377
+      Caption = 'نبهني إذا كانت كمية المنتج أقل أو تساوي'
+      Checked = True
+      State = cbChecked
+      TabOrder = 0
+    end
+  end
+  object SpinEdit1: TSpinEdit
+    Left = 64
+    Height = 24
+    Top = 168
+    Width = 56
+    Font.Color = 4788240
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    ParentFont = False
+    TabOrder = 4
+  end
+end

@@ -1,0 +1,154 @@
+object Fconnect: TFconnect
+  Left = 663
+  Height = 340
+  Top = 279
+  Width = 357
+  BiDiMode = bdRightToLeft
+  BorderIcons = []
+  BorderStyle = bsDialog
+  Caption = 'اتصال'
+  ClientHeight = 340
+  ClientWidth = 357
+  OnShow = FormShow
+  ParentBiDiMode = False
+  Position = poScreenCenter
+  LCLVersion = '1.0.10.0'
+  object Edit1: TEdit
+    Left = 72
+    Height = 22
+    Top = 40
+    Width = 268
+    ParentBidiMode = False
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    Left = 254
+    Height = 15
+    Top = 8
+    Width = 101
+    Caption = 'اختر قاعدة البيانات'
+    ParentColor = False
+  end
+  object Button1: TButton
+    Left = 24
+    Height = 25
+    Top = 40
+    Width = 31
+    Caption = '...'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+  object Label2: TLabel
+    Left = 298
+    Height = 15
+    Top = 168
+    Width = 59
+    Caption = 'المستخدم'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 294
+    Height = 15
+    Top = 224
+    Width = 57
+    Caption = 'كلمة السر'
+    ParentColor = False
+  end
+  object Edit2: TEdit
+    Left = 72
+    Height = 22
+    Top = 192
+    Width = 267
+    ParentBidiMode = False
+    TabOrder = 3
+    Text = 'sysdba'
+  end
+  object Edit3: TEdit
+    Left = 72
+    Height = 22
+    Top = 248
+    Width = 268
+    EchoMode = emPassword
+    ParentBidiMode = False
+    ParentShowHint = False
+    PasswordChar = '*'
+    ShowHint = True
+    TabOrder = 4
+  end
+  object BitBtn1: TBitBtn
+    Left = 24
+    Height = 34
+    Top = 296
+    Width = 94
+    Caption = 'موافق'
+    Default = True
+    Kind = bkOK
+    ModalResult = 1
+    OnClick = BitBtn1Click
+    TabOrder = 5
+  end
+  object BitBtn2: TBitBtn
+    Left = 121
+    Height = 34
+    Top = 296
+    Width = 94
+    Cancel = True
+    Caption = 'ألغ'
+    Kind = bkCancel
+    ModalResult = 2
+    OnClick = BitBtn2Click
+    TabOrder = 6
+  end
+  object Label4: TLabel
+    Left = 274
+    Height = 15
+    Top = 112
+    Width = 79
+    Caption = 'الجهاز المضيف'
+    ParentColor = False
+  end
+  object Edit4: TEdit
+    Left = 72
+    Height = 22
+    Top = 136
+    Width = 268
+    ParentBidiMode = False
+    TabOrder = 2
+    Text = 'localhost'
+  end
+  object Label5: TLabel
+    Left = 164
+    Height = 15
+    Top = 72
+    Width = 176
+    Caption = 'من أجل أول استعمال لا بد أن تنشأ'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Tahoma'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsItalic]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label6: TLabel
+    Left = 56
+    Height = 15
+    Top = 72
+    Width = 97
+    Caption = 'قاعدة بيانات جديدة'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Tahoma'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsItalic]
+    ParentColor = False
+    ParentFont = False
+  end
+  object OpenDialog1: TOpenDialog
+    Filter = '*.fdb|*.fdb'
+    left = 152
+    top = 16
+  end
+end

@@ -1,0 +1,211 @@
+object Faddproduit: TFaddproduit
+  Left = 494
+  Height = 458
+  Top = 166
+  Width = 577
+  BiDiMode = bdRightToLeft
+  BorderIcons = []
+  BorderStyle = bsDialog
+  Caption = 'إضافة منتج'
+  ClientHeight = 458
+  ClientWidth = 577
+  Font.Height = -13
+  Font.Name = 'Tahoma'
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnShow = FormShow
+  ParentBiDiMode = False
+  Position = poScreenCenter
+  LCLVersion = '1.0.8.0'
+  object BitBtn1: TBitBtn
+    Left = 155
+    Height = 34
+    Top = 400
+    Width = 104
+    Caption = 'موافق'
+    Default = True
+    Kind = bkOK
+    ModalResult = 1
+    OnClick = BitBtn1Click
+    TabOrder = 0
+  end
+  object BitBtn2: TBitBtn
+    Left = 32
+    Height = 34
+    Top = 400
+    Width = 104
+    Caption = 'أغلق'
+    Kind = bkClose
+    OnClick = BitBtn2Click
+    TabOrder = 1
+  end
+  object referance: TEdit
+    Left = 267
+    Height = 24
+    Top = 40
+    Width = 256
+    BidiMode = bdRightToLeft
+    ParentBidiMode = False
+    TabOrder = 2
+  end
+  object produit: TEdit
+    Left = 24
+    Height = 24
+    Top = 96
+    Width = 499
+    BidiMode = bdRightToLeft
+    ParentBidiMode = False
+    TabOrder = 3
+  end
+  object unite: TEdit
+    Left = 24
+    Height = 24
+    Top = 160
+    Width = 118
+    BidiMode = bdRightToLeft
+    ParentBidiMode = False
+    TabOrder = 4
+  end
+  object tva: TEdit
+    Left = 24
+    Height = 24
+    Top = 224
+    Width = 118
+    BidiMode = bdRightToLeft
+    ParentBidiMode = False
+    TabOrder = 5
+  end
+  object Achat: TEdit
+    Left = 405
+    Height = 24
+    Top = 160
+    Width = 118
+    BidiMode = bdRightToLeft
+    ParentBidiMode = False
+    TabOrder = 6
+  end
+  object Vente: TEdit
+    Left = 405
+    Height = 24
+    Top = 224
+    Width = 118
+    BidiMode = bdRightToLeft
+    ParentBidiMode = False
+    TabOrder = 7
+  end
+  object Label1: TLabel
+    Left = 485
+    Height = 17
+    Top = 16
+    Width = 38
+    BidiMode = bdRightToLeft
+    Caption = 'المعرف'
+    ParentBidiMode = False
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 488
+    Height = 17
+    Top = 72
+    Width = 35
+    BidiMode = bdRightToLeft
+    Caption = 'المنتج'
+    ParentBidiMode = False
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 106
+    Height = 17
+    Top = 136
+    Width = 36
+    BidiMode = bdRightToLeft
+    Caption = 'الوحدة'
+    ParentBidiMode = False
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 91
+    Height = 17
+    Top = 200
+    Width = 51
+    BidiMode = bdRightToLeft
+    Caption = 'TVA (%)'
+    ParentBidiMode = False
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 462
+    Height = 17
+    Top = 136
+    Width = 61
+    BidiMode = bdRightToLeft
+    Caption = 'ثمن الشراء'
+    ParentBidiMode = False
+    ParentColor = False
+  end
+  object Label6: TLabel
+    Left = 471
+    Height = 17
+    Top = 200
+    Width = 52
+    BidiMode = bdRightToLeft
+    Caption = 'ثمن البيع'
+    ParentBidiMode = False
+    ParentColor = False
+  end
+  object Label7: TLabel
+    Left = 469
+    Height = 17
+    Top = 264
+    Width = 54
+    Caption = 'المجموعة'
+    ParentColor = False
+  end
+  object ComboBox1: TComboBox
+    Left = 280
+    Height = 24
+    Top = 288
+    Width = 243
+    ItemHeight = 16
+    TabOrder = 8
+  end
+  object SpeedButton1: TSpeedButton
+    Left = 160
+    Height = 27
+    Top = 288
+    Width = 112
+    Caption = 'أضف مجموعة'
+    NumGlyphs = 0
+    OnClick = SpeedButton1Click
+  end
+  object SpeedButton2: TSpeedButton
+    Left = 24
+    Height = 27
+    Top = 288
+    Width = 118
+    Caption = 'احذف'
+    NumGlyphs = 0
+    OnClick = SpeedButton2Click
+  end
+  object quantite: TEdit
+    Left = 24
+    Height = 24
+    Top = 40
+    Width = 156
+    BidiMode = bdRightToLeft
+    ParentBidiMode = False
+    TabOrder = 9
+  end
+  object Label8: TLabel
+    Left = 109
+    Height = 16
+    Top = 16
+    Width = 71
+    BidiMode = bdRightToLeft
+    Caption = 'الكمية الابتدائية'
+    Font.Color = clRed
+    ParentBidiMode = False
+    ParentColor = False
+    ParentFont = False
+  end
+end

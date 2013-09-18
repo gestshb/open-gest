@@ -1,0 +1,103 @@
+object Ffindpro: TFfindpro
+  Left = 389
+  Height = 542
+  Top = 136
+  Width = 826
+  BiDiMode = bdRightToLeft
+  Caption = 'Recherche des produits'
+  ClientHeight = 542
+  ClientWidth = 826
+  OnShow = FormShow
+  ParentBiDiMode = False
+  Position = poDesktopCenter
+  LCLVersion = '1.0.10.0'
+  object Label19: TLabel
+    Left = 672
+    Height = 17
+    Top = 8
+    Width = 109
+    BidiMode = bdRightToLeft
+    Caption = 'ابحث حسب المعرف'
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    ParentBidiMode = False
+    ParentColor = False
+    ParentFont = False
+  end
+  object Edit1: TEdit
+    Left = 440
+    Height = 22
+    Hint = 'Après avoir trouvé ce que vous voulez presser sur tab puis sur a'
+    Top = 8
+    Width = 184
+    OnChange = Edit1Change
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 0
+  end
+  object Label20: TLabel
+    Left = 645
+    Height = 17
+    Top = 40
+    Width = 135
+    BidiMode = bdRightToLeft
+    Caption = 'ابحث حسب اسم المنتج'
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    ParentBidiMode = False
+    ParentColor = False
+    ParentFont = False
+  end
+  object Edit2: TEdit
+    Left = 440
+    Height = 22
+    Hint = 'Après avoir trouvé ce que vous voulez presser sur tab puis sur a'
+    Top = 40
+    Width = 184
+    OnChange = Edit2Change
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 1
+  end
+  object BitBtn1: TBitBtn
+    Left = 32
+    Height = 39
+    Top = 472
+    Width = 98
+    Caption = 'موافق'
+    Default = True
+    Kind = bkOK
+    ModalResult = 1
+    OnClick = BitBtn1Click
+    TabOrder = 3
+  end
+  object DBGrid1: TDBGrid
+    Left = -8
+    Height = 378
+    Top = 70
+    Width = 829
+    Color = clWindow
+    Columns = <>
+    DataSource = Datasource2
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    ParentFont = False
+    TabOrder = 2
+    TitleFont.Height = -13
+    TitleFont.Name = 'Tahoma'
+    OnEditingDone = BitBtn1Click
+  end
+  object Datasource2: TDatasource
+    DataSet = SQLfindpro
+    left = 420
+    top = 260
+  end
+  object SQLfindpro: TSQLQuery
+    FieldDefs = <>
+    Database = DataM.IBConnection1
+    Transaction = DataM.SQLTransaction1
+    Params = <>
+    left = 212
+    top = 212
+  end
+end
