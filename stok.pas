@@ -146,11 +146,11 @@ procedure Tfstok.BitBtn5Click(Sender: TObject);
 var
   s:Currency;
 begin
-  showmessage('تأكد أن أيا من المنتجات ليست كميته سلبية ولا ثمن شرائه يساوي الصفر');
+  showmessage('تأكد أن أيا من المنتجات ليست كميته سلبية ولا ثمن بيعه يساوي الصفر');
   with SQLQuery1 do
      begin
        close;
-       sql.text:='select sum(cast (PR_AC as numeric(18,2))*QU) "somme" from view_stok(:id_pro)';
+       sql.text:='select sum(cast (PR_VT as numeric(18,2))*QU) "somme" from view_stok(:id_pro)';
        Params.ParamByName('id_pro').Value:='allproduits';
        open;
        s:=FieldByName('somme').AsFloat;

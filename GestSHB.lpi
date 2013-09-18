@@ -215,8 +215,8 @@
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="8"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="141"/>
-        <CursorPos X="85" Y="149"/>
+        <TopLine Value="135"/>
+        <CursorPos X="84" Y="149"/>
         <UsageCount Value="200"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -1001,124 +1001,124 @@
     </Units>
     <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
-        <Filename Value="parm.pas"/>
-        <Caret Line="28" Column="4" TopLine="13"/>
+        <Filename Value="vente.pas"/>
+        <Caret Line="401" Column="138" TopLine="391"/>
       </Position1>
       <Position2>
         <Filename Value="vente.pas"/>
-        <Caret Line="401" Column="138" TopLine="391"/>
+        <Caret Line="402" Column="138" TopLine="392"/>
       </Position2>
       <Position3>
         <Filename Value="vente.pas"/>
-        <Caret Line="402" Column="138" TopLine="392"/>
+        <Caret Line="401" Column="138" TopLine="391"/>
       </Position3>
       <Position4>
         <Filename Value="vente.pas"/>
-        <Caret Line="401" Column="138" TopLine="391"/>
+        <Caret Line="402" Column="138" TopLine="392"/>
       </Position4>
       <Position5>
         <Filename Value="vente.pas"/>
-        <Caret Line="402" Column="138" TopLine="392"/>
+        <Caret Line="396" Column="11" TopLine="393"/>
       </Position5>
       <Position6>
         <Filename Value="vente.pas"/>
-        <Caret Line="396" Column="11" TopLine="393"/>
+        <Caret Line="461" Column="19" TopLine="449"/>
       </Position6>
       <Position7>
-        <Filename Value="vente.pas"/>
-        <Caret Line="461" Column="19" TopLine="449"/>
-      </Position7>
-      <Position8>
         <Filename Value="apropos.pas"/>
         <Caret Line="28" Column="97" TopLine="7"/>
-      </Position8>
-      <Position9>
+      </Position7>
+      <Position8>
         <Filename Value="vente.pas"/>
         <Caret Line="11" Column="68" TopLine="1"/>
-      </Position9>
-      <Position10>
+      </Position8>
+      <Position9>
         <Filename Value="home.pas"/>
         <Caret Line="291" Column="13" TopLine="290"/>
+      </Position9>
+      <Position10>
+        <Filename Value="vente.pas"/>
+        <Caret Line="10" Column="85" TopLine="1"/>
       </Position10>
       <Position11>
         <Filename Value="vente.pas"/>
-        <Caret Line="10" Column="85" TopLine="1"/>
+        <Caret Line="253" Column="26" TopLine="240"/>
       </Position11>
       <Position12>
-        <Filename Value="vente.pas"/>
-        <Caret Line="253" Column="26" TopLine="240"/>
-      </Position12>
-      <Position13>
         <Filename Value="connect.pas"/>
         <Caret Line="267" Column="49" TopLine="256"/>
+      </Position12>
+      <Position13>
+        <Filename Value="GestSHB.lpr"/>
+        <Caret Line="41" Column="8" TopLine="35"/>
       </Position13>
       <Position14>
         <Filename Value="GestSHB.lpr"/>
-        <Caret Line="41" Column="8" TopLine="35"/>
+        <Caret Line="9" Column="102" TopLine="5"/>
       </Position14>
       <Position15>
-        <Filename Value="GestSHB.lpr"/>
-        <Caret Line="9" Column="102" TopLine="5"/>
-      </Position15>
-      <Position16>
         <Filename Value="create.pas"/>
         <Caret Line="68" Column="60" TopLine="49"/>
-      </Position16>
-      <Position17>
+      </Position15>
+      <Position16>
         <Filename Value="vente.pas"/>
         <Caret Line="10" Column="65" TopLine="1"/>
-      </Position17>
-      <Position18>
+      </Position16>
+      <Position17>
         <Filename Value="GestSHB.lpr"/>
         <Caret Line="64" Column="1" TopLine="34"/>
-      </Position18>
-      <Position19>
+      </Position17>
+      <Position18>
         <Filename Value="apropos.pas"/>
         <Caret Line="6" Column="4" TopLine="6"/>
-      </Position19>
-      <Position20>
+      </Position18>
+      <Position19>
         <Filename Value="start.pas"/>
         <Caret Line="42" Column="1" TopLine="28"/>
-      </Position20>
-      <Position21>
+      </Position19>
+      <Position20>
         <Filename Value="transaction_stok.pas"/>
         <Caret Line="74" Column="99" TopLine="73"/>
+      </Position20>
+      <Position21>
+        <Filename Value="stok.pas"/>
+        <Caret Line="159" Column="129" TopLine="139"/>
       </Position21>
       <Position22>
         <Filename Value="stok.pas"/>
-        <Caret Line="159" Column="129" TopLine="139"/>
+        <Caret Line="160" Column="129" TopLine="140"/>
       </Position22>
       <Position23>
         <Filename Value="stok.pas"/>
-        <Caret Line="160" Column="129" TopLine="140"/>
+        <Caret Line="140" Column="3" TopLine="138"/>
       </Position23>
       <Position24>
         <Filename Value="stok.pas"/>
-        <Caret Line="140" Column="3" TopLine="138"/>
+        <Caret Line="146" Column="3" TopLine="138"/>
       </Position24>
       <Position25>
         <Filename Value="stok.pas"/>
-        <Caret Line="146" Column="3" TopLine="138"/>
+        <Caret Line="153" Column="63" TopLine="145"/>
       </Position25>
       <Position26>
         <Filename Value="stok.pas"/>
-        <Caret Line="153" Column="63" TopLine="145"/>
+        <Caret Line="156" Column="34" TopLine="139"/>
       </Position26>
       <Position27>
         <Filename Value="stok.pas"/>
-        <Caret Line="156" Column="34" TopLine="139"/>
+        <Caret Line="147" Column="13" TopLine="141"/>
       </Position27>
       <Position28>
         <Filename Value="stok.pas"/>
-        <Caret Line="147" Column="13" TopLine="141"/>
+        <Caret Line="156" Column="10" TopLine="142"/>
       </Position28>
       <Position29>
-        <Filename Value="stok.pas"/>
-        <Caret Line="156" Column="10" TopLine="142"/>
-      </Position29>
-      <Position30>
         <Filename Value="GestSHB.lpr"/>
         <Caret Line="55" Column="21" TopLine="43"/>
+      </Position29>
+      <Position30>
+        <Filename Value="stok.pas"/>
+        <Caret Line="149" Column="139" TopLine="148"/>
       </Position30>
     </JumpHistory>
   </ProjectOptions>
