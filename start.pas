@@ -46,7 +46,8 @@ var i:integer;
 begin
   if timer1.Interval=1000 then
   begin
-    for i:=1 to 100000000 do ;
+
+    Sleep(1000);
     fstart.Hide;
     form1.Show;
     Timer1.Enabled:=false;

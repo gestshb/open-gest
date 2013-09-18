@@ -56,7 +56,7 @@
         <UnitName Value="GestSHB"/>
         <EditorIndex Value="10"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="43"/>
+        <TopLine Value="42"/>
         <CursorPos X="86" Y="54"/>
         <UsageCount Value="200"/>
         <Loaded Value="True"/>
@@ -70,7 +70,7 @@
         <UnitName Value="home"/>
         <EditorIndex Value="13"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="56"/>
+        <TopLine Value="116"/>
         <CursorPos X="31" Y="144"/>
         <UsageCount Value="200"/>
         <Loaded Value="True"/>
@@ -110,7 +110,7 @@
         <UnitName Value="connect"/>
         <EditorIndex Value="3"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="106"/>
+        <TopLine Value="109"/>
         <CursorPos X="10" Y="133"/>
         <UsageCount Value="200"/>
         <Loaded Value="True"/>
@@ -129,10 +129,11 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="start"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="12"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="19"/>
-        <CursorPos X="72" Y="7"/>
+        <TopLine Value="34"/>
+        <CursorPos X="12" Y="50"/>
         <UsageCount Value="200"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -212,7 +213,6 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="stok"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="8"/>
         <WindowIndex Value="0"/>
         <TopLine Value="135"/>
@@ -993,7 +993,7 @@
         <Filename Value="/usr/share/fpcsrc/2.6.2/rtl/unix/sysunixh.inc"/>
         <EditorIndex Value="11"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="43"/>
+        <TopLine Value="30"/>
         <CursorPos X="2" Y="30"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>

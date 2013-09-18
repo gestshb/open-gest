@@ -2125,7 +2125,7 @@ object fstart: Tfstart
     0000
   }
   Position = poScreenCenter
-  LCLVersion = '1.0.4.0'
+  LCLVersion = '1.0.10.0'
   object Image1: TImage
     Left = 0
     Height = 286
